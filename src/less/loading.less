@@ -1,0 +1,23 @@
+@keyframes rotate{
+  0%{transform:scale(1,1)}
+  50%{transform:scale(1.2,1.2)}
+  100%{transform:scale(1,1)}
+}
+#tamamo-loading {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -3rem;
+  margin-top: -3rem;
+  z-index: 999;
+  height: 6rem;
+  width: 6rem;
+  .loading-img {
+    animation: rotate 1s infinite linear;
+    height: 6rem;
+    width: 6rem;
+  }
+}

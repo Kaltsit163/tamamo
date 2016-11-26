@@ -5,13 +5,15 @@
     <div>
         <router-view></router-view>
         <el-foot></el-foot>
+        <el-loading></el-loading>
     </div>
 </template>
 <script>
     import elFoot from '../components/foot';
+    import elLoading from '../components/loading';
     export default {
         components: {
-            elFoot
+            elFoot, elLoading
         },
         data () {
             return {}

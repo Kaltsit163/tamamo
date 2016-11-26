@@ -18,6 +18,37 @@ let router = new VueRouter({
 });
 
 export  default new Vue({
+		base: __dirname,
     router: router,
     render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');
+
+// 扩展location.query
+location.query = (function(){
+	var searchArr = [],query = {};
+	try{
+		searchArr = window.location.search.substring(1).split('&');
+		for(var n in searchArr){
+			var o = searchArr[n].split('=');
+			if(o[0]!=""){
+				query[o[0]] = o[1];
+			}
+		}
+	}catch(e){
+		return {};
+	}
+	return query;
+})();
+
+// 路由切换开始
+router.beforeEach( (to, from, next) => {
+	document.querySelector('#tamamo-loading').style.display = 'block';
+	next();
+});
+
+
+// 路由切换成功
+router.afterEach((to, from, next) => {
+	document.querySelector('#tamamo-loading').style.display = 'none';
+});
+
