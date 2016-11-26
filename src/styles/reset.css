@@ -80,6 +80,10 @@ select, option{
 .clearfix{
     *zoom:1;
 }
-.tamamo-icon {
-    font-family: 'tamamo-icon';
+.icon {
+    font-size: 2rem;
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
 }

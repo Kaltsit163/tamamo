@@ -4,7 +4,6 @@
 <template>
     <section class="video">
         <img src="../images/tamamo.jpg">
-        <i class = "tamamo-icon cloud">&#xe61a;</i>
     </section>
 </template>
 <script>
