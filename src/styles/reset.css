@@ -80,3 +80,6 @@ select, option{
 .clearfix{
     *zoom:1;
 }
+.tamamo-icon {
+    font-family: 'tamamo-icon';
+}

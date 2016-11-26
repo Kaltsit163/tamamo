@@ -1,7 +1,7 @@
 {
-  "name": "vue-vue-router-webpack",
-  "version": "1.1.0",
-  "description": "A base vue project with webpack",
+  "name": "vue-tamamo",
+  "version": "1.0.0",
+  "description": "caster tamamo",
   "main": "index.js",
   "scripts": {
     "init": "webpack --progress --config webpack.dev.config.js",
@@ -9,14 +9,13 @@
     "build": "webpack --progress --hide-modules --config webpack.prod.config.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/icarusion/vue-vueRouter-webpack.git"
+    "type": "git"
   },
-  "author": "Aresn",
+  "author": "ran",
   "license": "MIT",
   "dependencies": {
-    "vue": "^1.0.25",
-    "vue-router": "^0.7.13"
+    "vue": "^2.1.3",
+    "vue-router": "^2.0.3"
   },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
@@ -42,9 +41,5 @@
     "vue-loader": "^7.2.0",
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.13.1"
-  },
-  "bugs": {
-    "url": "https://github.com/icarusion/vue-vueRouter-webpack/issues"
-  },
-  "homepage": "https://github.com/icarusion/vue-vueRouter-webpack#readme"
+  }
 }
