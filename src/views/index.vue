@@ -1,8 +1,10 @@
 <style scoped lang="less">
-
+    @import '../less/index.less';
 </style>
 <template>
-    <section id="index">index</section>
+    <section id="index">
+        <img src="../images/game.jpg">
+    </section>
 </template>
 <script>
     export default {

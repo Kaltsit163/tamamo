@@ -3,6 +3,7 @@
 </style>
 <template>
     <section class="video">
+        <h1>Video</h1>
         <img src="../images/tamamo.jpg">
     </section>
 </template>
