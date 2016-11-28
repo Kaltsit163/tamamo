@@ -3,7 +3,7 @@
 </style>
 <template>
     <section class="cos">
-        <h1>COS</h1>
+        <h1>{{currentTime}}</h1>
         <img src="../images/cos.jpg">
     </section>
 </template>
@@ -14,13 +14,20 @@
 
             }
         },
+        vuex : {
+            getters: {
+                time: state => state.time
+            }
+        },
         ready () {
 
         },
-        beforeDestroy () {
-
-        },
         methods: {
+        },
+        computed: {
+            timeVuex () {
+                return store.state.time;
+            }
         }
     }
 </script>
