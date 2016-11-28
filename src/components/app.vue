@@ -11,15 +11,16 @@
 <script>
     import elFoot from '../components/foot';
     import elLoading from '../components/loading';
+    import store from '../vuex/store.js';
     export default {
         components: {
             elFoot, elLoading
         },
+        store: store,
         data () {
             return {}
         },
         ready () {
-
         },
         beforeDestroy () {
 

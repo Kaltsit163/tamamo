@@ -1,5 +1,3 @@
-import * as types from './mutation.js';
-
-const actions = {
-
-}
+export const ADD_NUM = function ({ dispatch, state }) {
+	dispatch('ADD_NUM', 1)
+};
