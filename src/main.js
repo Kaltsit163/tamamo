@@ -23,13 +23,11 @@ const router = new VueRouter({
 
 // 路由切换开始
 router.beforeEach( (to, from, next) => {
-	console.log('start router')
 	next();
 });
 
 // 路由切换成功
 router.afterEach((to, from, next) => {
-	console.log('stop router')
 });
 
 // Vue配好

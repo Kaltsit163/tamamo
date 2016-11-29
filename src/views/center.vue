@@ -8,6 +8,7 @@
     </section>
 </template>
 <script>
+    import { mapGetters } from 'vuex';
     export default {
         data () {
             return {
@@ -21,9 +22,9 @@
             }
         },
         computed: {
-            pushData: function () {
-                return this.$store.state.item
-            }
+            ...mapGetters({
+                pushData: 'GET_ITEM'
+            })
         }
     }
 </script>
