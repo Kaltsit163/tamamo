@@ -1,7 +1,7 @@
 import Vue from 'vue/dist/vue.js';
 import VueRouter from 'vue-router';
-import App from 'components/app.vue';
 import routers from './router';
+import App from 'components/app.vue';
 import Env from './config/env';
 import store from './vuex/store.js';
 import ElementUI from 'element-ui';
@@ -16,17 +16,10 @@ Vue.config.debug = true;
 // 路由配置
 const router = new VueRouter({
     // 是否开启History模式的路由,默认开发环境开启,生产环境不开启。如果生产环境的服务端没有进行相关配置,请慎用
-    history: Env != 'production',
-    mode: 'history',
-    routes: routers
+  history: Env != 'production',
+  mode: 'history',
+  routes: routers
 });
-
-// Vue配好
-export default new Vue({
-		store,
-    router,
-    render: h => h(App)
-}).$mount('#tamamo-app');
 
 // 路由切换开始
 router.beforeEach( (to, from, next) => {
@@ -38,6 +31,11 @@ router.beforeEach( (to, from, next) => {
 router.afterEach((to, from, next) => {
 	console.log('stop router')
 });
+
+// Vue配好
+export default new Vue({
+		store, router, render: h => h(App)
+}).$mount('#tamamo-app');
 
 // 扩展location.query
 location.query = (function(){

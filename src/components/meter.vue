@@ -5,6 +5,7 @@
     <section id='meter'>{{count}}</section>
 </template>
 <script>
+    import { mapGetters } from 'vuex';
     export default {
         data () {
             return {}
@@ -14,9 +15,9 @@
         methods: {
         },
         computed: {
-            count: function () {
-                return this.$store.state.count
-            }
+            ...mapGetters({
+                count: 'GET_COUNT'
+            })
         }
     }
 </script>

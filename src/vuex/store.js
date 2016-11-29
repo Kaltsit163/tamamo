@@ -1,7 +1,7 @@
 import Vue from 'vue/dist/vue.js';
 import Vuex from 'vuex';
 import * as actions from '../vuex/actions.js';
-import * as getters from '../vuex/mutations.js';
+import * as getters from '../vuex/getters.js';
 import mutations from '../vuex/mutations.js';
 
 // 告诉 vue “使用” vuex
