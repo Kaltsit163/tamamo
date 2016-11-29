@@ -18,24 +18,25 @@ const router = new VueRouter({
     routes: routers
 });
 
-// Vue起飞
+// Vue配好
 export default new Vue({
-		base: __dirname,
-		store: store,
-    router: router,
+		store,
+    router,
     render: h => h(App)
 }).$mount('#tamamo-app');
 
 
 // 路由切换开始
 router.beforeEach( (to, from, next) => {
-	document.querySelector('#tamamo-loading').style.display = 'block';
+	// document.querySelector('#tamamo-loading').style.display = 'block';
+	console.log('start router')
 	next();
 });
 
 // 路由切换成功
 router.afterEach((to, from, next) => {
-	document.querySelector('#tamamo-loading').style.display = 'none';
+	console.log('stop router')
+	// document.querySelector('#tamamo-loading').style.display = 'none';
 });
 
 

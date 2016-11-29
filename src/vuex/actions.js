@@ -1,3 +1,3 @@
-export const ADD_NUM = function ({ dispatch, state }) {
-	dispatch('ADD_NUM', 1)
-};
+export const addItem = ({ dispatch }, num) => {
+    dispatch('addItem', num)
+}

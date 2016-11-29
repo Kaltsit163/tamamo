@@ -4,7 +4,6 @@
 <template>
     <section class="video">
         <h1>Video</h1>
-        <img src="../images/tamamo.jpg">
     </section>
 </template>
 <script>
@@ -17,13 +16,7 @@
         ready () {
 
         },
-        beforeDestroy () {
-
-        },
         methods: {
-            console () {
-                console.log(2);
-            }
         }
     }
 </script>

@@ -3,7 +3,8 @@
 </style>
 <template>
     <section id="index">
-        <img src="../images/game.jpg">
+        <p>index</p>
+        <button class="add" @click="add()">add</button>
     </section>
 </template>
 <script>
@@ -15,10 +16,10 @@
         ready () {
 
         },
-        beforeDestroy () {
-
-        },
         methods: {
+            add: function (argument) {
+               this.$store.commit('addItem', 1)
+            }
         }
     }
 </script>

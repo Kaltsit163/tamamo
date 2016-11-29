@@ -1,3 +1,3 @@
-export function getTime (state) {
-	return state.time;
+export function getQuestions(state) {
+    return state.count
 }
