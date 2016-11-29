@@ -7,10 +7,10 @@ const routers = [
     }
   },
   {
-    name: 'video',
-    path: '/video',
+    name: 'video-list',
+    path: '/video-list',
     component: resolve => {
-      require(['./views/video.vue'], resolve);
+      require(['./views/video-list.vue'], resolve);
     }
   },
 	{

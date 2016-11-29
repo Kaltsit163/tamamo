@@ -10,7 +10,7 @@
                 </svg>
             </section>
         </router-link>
-        <router-link :to="{ name: 'video'}">
+        <router-link :to="{ name: 'video-list'}">
             <section :class="['foot-item']">
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-shipin"></use>
