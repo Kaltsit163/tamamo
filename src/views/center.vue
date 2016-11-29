@@ -4,6 +4,7 @@
 <template>
     <section class="center">
         <h1>Center</h1>
+        <li v-for="(item, index) in pushData" @click="console(index)">{{item}}</li>
     </section>
 </template>
 <script>
@@ -13,9 +14,16 @@
             }
         },
         ready () {
-
         },
         methods: {
+            console: function (index) {
+                console.log(index)
+            }
+        },
+        computed: {
+            pushData: function () {
+                return this.$store.state.item
+            }
         }
     }
 </script>

@@ -41,7 +41,10 @@
     │    │
     │    └─ reset.css  # 页面初始化css
     │
-    ├─fonts            # 放置iconfont字体
+    ├─less             # 放置less
+    │
+    │
+    ├─vuex             # 放置vuex
     │
     │
     └─template         # 放置html模板,webpack依赖此文件生成所需的html

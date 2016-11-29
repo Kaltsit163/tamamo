@@ -1,9 +1,9 @@
 const mutations = {
-	addItem (state, num) {
+	ADD_COUNT : (state, num) => {
 		state.count ++;
 	},
-	reduceItem (state, num) {
-		state.count --;
+	ADD_ITEM : (state, item) => {
+		state.item.push(item);
 	}
 }
 
