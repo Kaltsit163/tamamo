@@ -54,6 +54,10 @@
 
 </pre>
 
+# 为什么要做这个？
+## 自己工作的项目使用的也是VUE全家桶，这次为了更上VUE新版发布，也自己做了一个新的DEMO
+## 使用了iconfont彩色字体，Vue2.1 + Vue-router2.0 + Vuex2.0, 使用ES6 + Babel, 样式使用Less
+## 打包使用webpack,使用vue-loader 之后  xx.vue 也更加方便
 
 ##说明
 目前已将css(使用@import的和.vue内style的)样式都独立抽离为main.css文件,如果想按需加载,可以将webpack.base.js内的如下代码注释
