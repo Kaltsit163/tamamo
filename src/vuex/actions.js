@@ -1,3 +1,3 @@
 export const addItem = ({ dispatch }, num) => {
-    dispatch('addItem', num)
+  dispatch('addItem', num);
 }

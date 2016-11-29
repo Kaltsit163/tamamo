@@ -4,8 +4,11 @@ import App from 'components/app.vue';
 import routers from './router';
 import Env from './config/env';
 import store from './vuex/store.js';
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-default/index.css'
 
-Vue.use(VueRouter); // 使用vue-router
+Vue.use(VueRouter);  // 使用vue-router
+Vue.use(ElementUI);  // 使用饿了么UI
 
 // 开启debug模式
 Vue.config.debug = true;
@@ -25,10 +28,8 @@ export default new Vue({
     render: h => h(App)
 }).$mount('#tamamo-app');
 
-
 // 路由切换开始
 router.beforeEach( (to, from, next) => {
-	// document.querySelector('#tamamo-loading').style.display = 'block';
 	console.log('start router')
 	next();
 });
@@ -36,9 +37,7 @@ router.beforeEach( (to, from, next) => {
 // 路由切换成功
 router.afterEach((to, from, next) => {
 	console.log('stop router')
-	// document.querySelector('#tamamo-loading').style.display = 'none';
 });
-
 
 // 扩展location.query
 location.query = (function(){

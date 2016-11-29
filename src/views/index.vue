@@ -17,8 +17,8 @@
 
         },
         methods: {
-            add: function (argument) {
-               this.$store.commit('addItem', 1)
+            add: function () {
+                this.$store.commit('addItem', 1)
             }
         }
     }
