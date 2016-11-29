@@ -5,10 +5,21 @@ import App from 'components/app.vue';
 import Env from './config/env';
 import store from './vuex/store.js';
 import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-default/index.css'
+import 'element-ui/lib/theme-default/index.css';
+import FastClick from 'fastclick';
 
-Vue.use(VueRouter);  // 使用vue-router
-Vue.use(ElementUI);  // 使用饿了么UI
+// 移动端使用的fastclick
+if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+    }, false);
+}
+
+// 使用vue-router
+Vue.use(VueRouter);
+
+// 使用饿了么UI
+Vue.use(ElementUI);
 
 // 开启debug模式
 Vue.config.debug = true;
@@ -27,16 +38,17 @@ router.beforeEach( (to, from, next) => {
 });
 
 // 路由切换成功
-router.afterEach((to, from, next) => {
-});
+router.afterEach((to, from, next) => {});
 
-// Vue配好
+// Vue初始化
 export default new Vue({
-		store, router, render: h => h(App)
+		store,
+		router,
+		render: h => h(App)
 }).$mount('#tamamo-app');
 
 // 扩展location.query
-location.query = (function(){
+window.location.query = (function(){
 	var searchArr = [],query = {};
 	try{
 		searchArr = window.location.search.substring(1).split('&');

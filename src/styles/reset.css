@@ -81,7 +81,7 @@ select, option{
     *zoom:1;
 }
 .icon {
-    font-size: 2rem;
+    font-size: 1rem;
     width: 1em; height: 1em;
     vertical-align: -0.15em;
     fill: currentColor;
