@@ -1,5 +1,5 @@
 <style scoped lang="less">
-  @import '../less/canvas';
+  @import '../less/canvas.less';
 </style>
 <template>
   <section class="canvas-content">
