@@ -10,7 +10,7 @@
         data () {
             return {}
         },
-        ready () {
+        mounted () {
         },
         methods: {
         },

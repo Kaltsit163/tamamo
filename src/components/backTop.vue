@@ -32,7 +32,7 @@ export default {
       }
     }
   },
-  ready() {
+  mounted() {
     let that = this;
     window.onscroll = () => {
       let scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;

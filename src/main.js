@@ -1,6 +1,7 @@
 import Vue from 'vue/dist/vue.js';
 import VueRouter from 'vue-router';
 import routers from './router';
+import axios from 'axios';
 import App from 'components/app.vue';
 import Env from './config/env';
 import store from './vuex/store.js';
@@ -15,9 +16,10 @@ if ('addEventListener' in document) {
     }, false);
 }
 
-// 使用vue-router
+// 全局使用
+window.axios = axios;
+// 使用 Vue-router
 Vue.use(VueRouter);
-
 // 使用饿了么UI
 Vue.use(ElementUI);
 
