@@ -26,6 +26,13 @@ const routers = [
 		component: resolve => {
 			require(['./views/center.vue'], resolve);
 		}
-	}
+	},
+	{
+    name: 'canvas',
+    path: '/canvas',
+    component: resolve => {
+      require(['./components/canvas.vue'], resolve);
+    }
+  }
 ];
 export default routers;
