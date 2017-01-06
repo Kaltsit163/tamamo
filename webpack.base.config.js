@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
     // 入口
     entry: {
-        main: './src/main',
+        main: './src/main', // 项目主要流程文件
         vendors: ['vue', 'vue-router']
     },
     // 输出
@@ -16,9 +16,9 @@ module.exports = {
         loaders: [
             { test: /\.vue$/, loader: 'vue' },
             { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
-            { test: /\.css$/, loader: 'style!css!autoprefixer'},
-            { test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
-            { test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=8192'},
+            { test: /\.css$/, loader: 'style!css!autoprefixer' },
+            { test: /\.scss$/, loader: 'style!css!sass?sourceMap' },
+            { test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=8192' },
             { test: /\.(html|tpl)$/, loader: 'html-loader' }
         ]
     },

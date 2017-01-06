@@ -4,10 +4,8 @@
 <template>
 	<div>
 		<router-view></router-view>
-		<el-foot></el-foot>
-		<el-loading></el-loading>
-		<el-meter></el-meter>
-		<el-back-top></el-back-top>
+<!-- 		<el-foot></el-foot>
+		<el-back-top></el-back-top> -->
 	</div>
 </template>
 <script>
