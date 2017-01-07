@@ -4,21 +4,21 @@
 <template>
 	<div>
 		<router-view></router-view>
-<!-- 		<el-foot></el-foot>
-		<el-back-top></el-back-top> -->
+		<el-foot></el-foot>
+		<!--<el-back-top></el-back-top>-->
+		<el-cube-loading></el-cube-loading>
 	</div>
 </template>
 <script>
 	import elFoot from '../components/foot';
-	import elLoading from '../components/loading';
-	import elMeter from '../components/meter';
+	import elCubeLoading from '../components/cube-loading';
 	import elBackTop from '../components/backTop';
 	import store from '../vuex/store.js';
 	export default {
 		name: 'tamamo',
 		store,
 		components: {
-			elFoot, elLoading, elMeter, elBackTop
+			elFoot, elCubeLoading, elBackTop
 		},
 		data () {
 			return {
