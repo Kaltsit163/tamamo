@@ -1,4 +1,5 @@
-const routers = [{
+const routers = [
+    {
         name: 'index',
         path: '/',
         component: resolve => {
@@ -31,6 +32,13 @@ const routers = [{
         path: '/bad-apple',
         component: resolve => {
             require(['./components/bad-apple.vue'], resolve);
+        }
+    },
+    {
+        name: 'timeline',
+        path: '/timeline',
+        component: resolve => {
+            require(['./views/timeline.vue'], resolve);
         }
     }
 ];

@@ -8,6 +8,8 @@ import store from './vuex/store.js';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-default/index.css';
 import FastClick from 'fastclick';
+import iconFont from 'libs/iconfont.js';
+import flexible from 'libs/flexible.js';
 
 // 移动端使用的fastclick
 if ('addEventListener' in document) {
