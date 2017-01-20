@@ -1,3 +1,5 @@
+/*! Sammon by Tamamo */
+
 const routers = [
     {
         name: 'index',

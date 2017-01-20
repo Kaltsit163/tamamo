@@ -1,3 +1,5 @@
+/*! Sammon by Tamamo */
+
 import Vue from 'vue/dist/vue.js';
 import VueRouter from 'vue-router';
 import routers from './router';

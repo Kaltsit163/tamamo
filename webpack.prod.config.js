@@ -1,3 +1,5 @@
+/*! Sammon by Tamamo */
+
 var webpack = require('webpack');
 var config = require('./webpack.base.config');
 var HtmlWebpackPlugin = require('html-webpack-plugin');

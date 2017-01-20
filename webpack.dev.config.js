@@ -1,6 +1,4 @@
-/**
- * Created by aresn on 16/7/5.
- */
+/*! Sammon by Tamamo */
 
 var webpack = require('webpack');
 var config = require('./webpack.base.config');

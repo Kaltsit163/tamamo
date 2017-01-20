@@ -1,3 +1,5 @@
+/*! Sammon by Tamamo */
+
 var path = require('path');
 var webpack = require('webpack');
 
@@ -34,7 +36,10 @@ module.exports = {
         alias: {
             filter: path.join(__dirname, './src/filters'),
             components: path.join(__dirname, './src/components'),
-            libs: path.join(__dirname, './src/libs')
+            libs: path.join(__dirname, './src/libs'),
+            utils: path.join(__dirname, './src/utils'),
+            view: path.join(__dirname, './src/views'),
+            less: path.join(__dirname, './src/less')
         }
     },
     plugins: [

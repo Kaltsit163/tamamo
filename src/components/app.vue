@@ -8,7 +8,7 @@
 	</div>
 </template>
 <script>
-	import elBackTop from '../components/backTop';
+	import elBackTop from 'components/backTop';
 	import store from '../vuex/store.js';
 	export default {
 		name: 'tamamo',
