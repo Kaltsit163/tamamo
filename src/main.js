@@ -9,7 +9,8 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-default/index.css';
 import FastClick from 'fastclick';
 import iconFont from 'libs/iconfont.js';
-import flexible from 'libs/flexible.js';
+import flexbile from 'libs/flexible.js';
+import flexbile_css from 'libs/flexible_css.js';
 
 // 移动端使用的fastclick
 if ('addEventListener' in document) {
@@ -50,20 +51,3 @@ export default new Vue({
 		router,
 		render: h => h(App)
 }).$mount('#tamamo-app');
-
-// 扩展location.query
-window.location.query = (function(){
-	var searchArr = [],query = {};
-	try{
-		searchArr = window.location.search.substring(1).split('&');
-		for(var n in searchArr){
-			var o = searchArr[n].split('=');
-			if(o[0]!=""){
-				query[o[0]] = o[1];
-			}
-		}
-	}catch(e){
-		return {};
-	}
-	return query;
-})();

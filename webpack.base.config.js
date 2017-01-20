@@ -38,6 +38,6 @@ module.exports = {
         }
     },
     plugins: [
-
+        new webpack.BannerPlugin('Sammon by Tamamo')
     ]
 };
