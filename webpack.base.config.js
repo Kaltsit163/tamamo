@@ -4,14 +4,17 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
+    context: process.cwd(), // 确定webpack的编译上下文
+    watch: true, // 文件在改变的时候，让webpack动态编译
     // 入口
     entry: {
-        main: './src/main', // 项目主要流程文件
+        main: './src/main', // 这里其实是一个键值对，如果下面要output用[name].js,输出就是这个key的名称
         vendors: ['vue', 'vue-router']
     },
+    devtool: 'source-map', // 资源隐射表，Chrome debug时,避免去查看编译后的文件一头包
     // 输出
     output: {
-        path: path.join(__dirname, './dist')
+        path: path.join(__dirname, './dist') //输出到那个目录
     },
     // 加载器
     module: {
@@ -26,7 +29,7 @@ module.exports = {
     },
     // 转es5
     babel: {
-        presets: ['es2015', 'stage-3'],
+        presets: ['es2015', 'stage-3'], // presets是babel里面的一个集合包的意思
         plugins: ['transform-runtime']
     },
     resolve: {
@@ -43,6 +46,7 @@ module.exports = {
         }
     },
     plugins: [
+        // 编译完成之后还不满意, 就可以二次加工
         new webpack.BannerPlugin('Sammon by Tamamo')
     ]
 };
