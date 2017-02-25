@@ -4,7 +4,7 @@ import Vue from 'vue/dist/vue.js';
 import VueRouter from 'vue-router';
 import routers from './router';
 import axios from 'axios';
-import App from 'components/app.vue';
+import App from 'view/app.vue';
 import Env from './config/env';
 import store from './vuex/store.js';
 import ElementUI from 'element-ui';
