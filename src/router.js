@@ -28,20 +28,6 @@ const routers = [
         component: resolve => {
             require(['./views/center.vue'], resolve);
         }
-    },
-    {
-        name: 'badApple',
-        path: '/bad-apple',
-        component: resolve => {
-            require(['./components/bad-apple.vue'], resolve);
-        }
-    },
-    {
-        name: 'timeline',
-        path: '/timeline',
-        component: resolve => {
-            require(['./views/timeline.vue'], resolve);
-        }
     }
 ];
 export default routers;

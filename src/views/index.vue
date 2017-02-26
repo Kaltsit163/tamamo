@@ -2,12 +2,7 @@
 	@import '../less/index.less';
 </style>
 <template>
-	<section id="index">
-		<button @click="add()">点我</button>
-		<ul class="bangumis">
-			<bangumi v-for="item in bangumiData" :info=item></bangumi>
-		</ul>
-	</section>
+
 </template>
 <script>
 	import bangumi from '../components/bangumi';
@@ -21,7 +16,7 @@
 			}
 		},
 		mounted () {
-			this.getData();
+
 		},
 		methods: {
 			getData: function () {

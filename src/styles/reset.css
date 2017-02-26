@@ -12,7 +12,8 @@ html,body{
     height:100%
 }
 body {
-
+    min-height: 100vh;
+    background:#ede9de;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
