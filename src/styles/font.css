@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('http://olkc2dwjv.bkt.clouddn.com/KaushanScript-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('http://olkc2dwjv.bkt.clouddn.com/Montserrat-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('http://olkc2dwjv.bkt.clouddn.com/Montserrat-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}

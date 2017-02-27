@@ -6,6 +6,7 @@
     top:0;
     left: 0;
     background: #ede9de;
+    transition: 10s;
 }
 
 .container {
@@ -164,7 +165,7 @@ transform: translateX(-25px);
 
 </style>
 <template>
-  <div class="router-loading">
+  <div class="router-loading" v-show="routerShow">
       <div class="container">
           <div class="cord leftMove">
               <div class="ball"></div>
@@ -203,7 +204,14 @@ transform: translateX(-25px);
     export default{
         data(){
             return{
+              routerShow: true
             }
+        },
+        created () {
+          let _this = this;
+          setTimeout( ()=> {
+            _this.routerShow = false;
+          }, 1000)
         }
     }
 </script>

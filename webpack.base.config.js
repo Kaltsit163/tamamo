@@ -42,7 +42,8 @@ module.exports = {
             libs: path.join(__dirname, './src/libs'),
             utils: path.join(__dirname, './src/utils'),
             view: path.join(__dirname, './src/views'),
-            less: path.join(__dirname, './src/less')
+            less: path.join(__dirname, './src/less'),
+            style: path.join(__dirname, './src/styles')
         }
     },
     plugins: [

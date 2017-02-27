@@ -6,7 +6,7 @@
 		<el-menu></el-menu>
 		<router-view></router-view>
 		<el-back-top></el-back-top>
-		<!--<el-ball-loading></el-ball-loading>-->
+		<el-ball-loading></el-ball-loading>
 	</div>
 </template>
 <script>

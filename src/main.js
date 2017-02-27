@@ -14,6 +14,8 @@ import iconFont from 'libs/iconfont.js';
 import flexbile from 'libs/flexible.js';
 import flexbile_css from 'libs/flexible_css.js';
 
+require('libs/animate.css');
+
 // 移动端使用的fastclick
 if ('addEventListener' in document) {
     document.addEventListener('DOMContentLoaded', function() {

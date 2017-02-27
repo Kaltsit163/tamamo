@@ -1,4 +1,7 @@
 <style scoped lang="less">
+  .tamamo-menu {
+    font-family: "Kaushan Script";
+  }
   .menu-head {
     display: flex;
     top: 0;
@@ -20,7 +23,7 @@
       flex: 3;
     }
     .menu-desc {
-      font-size: 0.4rem;
+      font-size: 0.6rem;
     }
     .icon {
       font-size: 1rem;
@@ -28,7 +31,7 @@
     .icon-more {
       animation: 1s up-down infinite;
       position: relative;
-      font-size: 0.5rem;
+      font-size: 0.1rem;
     }
     @keyframes up-down {
       0% {
@@ -39,6 +42,35 @@
       }
       100% {
         bottom: 0;
+      }
+    }
+  }
+  .nav-list {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: 0.5s slide-down ease-out;
+    > li {
+      position: relative;
+      color: rgba(231,101,65,1);
+      line-height: 1.8rem;
+      font-size: 0.6rem;
+    }
+    .js {
+        animation-duration: 0.7s;
+      }
+    .css {
+        animation-duration: 0.8s;
+      }
+    .other {
+        animation-duration: 0.9s;
+      }
+    @keyframes slide-down {
+      0% {
+        height: 0;
+      }
+      100% {
+        height: 5.4rem;
       }
     }
   }
@@ -67,8 +99,9 @@
 			</section>
     </section>
     <ul v-show="navShow" class="nav-list" >
-      <li>代码</li>
-      <li>新番</li>
+      <li class="animated bounceInLeft js">JavaScript</li>
+      <li class="animated bounceInLeft css">CSS</li>
+      <li class="animated bounceInLeft other">Other</li>
     </ul>
     <section v-show="infoShow" class="menu-aside" >
       <ul class="info-list"></ul>
