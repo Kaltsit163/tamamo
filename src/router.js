@@ -28,6 +28,13 @@ const routers = [
         component: resolve => {
             require(['./views/center.vue'], resolve);
         }
+    },
+    {
+        name: 'scroll',
+        path: '/scroll',
+        component: resolve => {
+            require(['./views/scroll.vue'], resolve);
+        }
     }
 ];
 export default routers;

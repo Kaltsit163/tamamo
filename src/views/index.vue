@@ -2,7 +2,16 @@
 	@import '../less/index.less';
 </style>
 <template>
-
+	<section class="wrap">
+		<ul class="content">
+			<li v-bind="Arr">
+				<div class="cube"></div>
+			</li>
+			<li>
+				<div class="cube"></div>
+			</li>
+		</ul>
+	</section>
 </template>
 <script>
 	import bangumi from '../components/bangumi';
@@ -12,7 +21,8 @@
 		},
 		data () {
 			return {
-				bangumiData: []
+				bangumiData: [],
+				Arr: new Arr(10)
 			}
 		},
 		mounted () {

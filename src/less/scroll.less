@@ -1,0 +1,47 @@
+.wrap {
+  text-align: center;
+  overflow: hidden;
+  > nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    color: #666;
+    background: #fed163;
+    height: 10vh;
+    line-height: 10vh;
+    > span {
+      font-size: 1rem;
+      flex: 1;
+    }
+  }
+  .content {
+    margin-top: 10vh;
+    transition: all 0.3s;
+    display: flex;
+    overflow: hidden;
+    > li {
+      flex: 1;
+      height: 90vh;
+      overflow-x: hidden; 
+      overflow-y: scroll; 
+    }
+  }
+  .two {
+    .cube {
+      background: green;
+    }
+  }
+  .cube {
+    font-size: 20px;
+    color: #fff;
+    line-height: 100px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 80%;
+    height: 100px;
+    background: red;
+  }
+}
